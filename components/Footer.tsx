@@ -16,12 +16,12 @@ export default function Footer() {
           {/* Brand Col */}
           <div className="md:col-span-2">
             <Link href="/" className="inline-block mb-3 group">
-              <div className="relative h-14 w-48 group-hover:scale-105 transition-transform duration-200 brightness-125 contrast-125">
+              <div className="relative h-16 w-56 group-hover:scale-105 transition-transform duration-200">
                 <Image
-                  src="/images/logo.webp"
+                  src="/images/logo-green-white.webp"
                   alt="make diet plan logo"
                   fill
-                  sizes="192px"
+                  sizes="224px"
                   className="object-contain object-left"
                 />
               </div>
