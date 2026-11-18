@@ -23,7 +23,7 @@ export default function Navbar() {
         <Link href="/" className="flex items-center gap-3 group py-1">
           <div className="relative h-16 w-56 sm:h-20 sm:w-64 group-hover:scale-105 transition-transform duration-200">
             <Image
-              src="/images/logo-nav.webp"
+              src="/images/logo.webp"
               alt="make diet plan logo"
               fill
               sizes="(max-width: 640px) 224px, 256px"
