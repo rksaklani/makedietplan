@@ -5,6 +5,11 @@ export const metadata: Metadata = {
   title: "make diet plan | Nutrition & Diet Plans",
   description:
     "Science-backed meal plans for school-going children and families, based on ICMR-NIN guidelines. Book a consultation with a certified nutritionist.",
+  icons: {
+    icon: "/icon.webp",
+    shortcut: "/icon.webp",
+    apple: "/icon.webp",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

@@ -18,15 +18,15 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 h-24 flex items-center justify-between">
         {/* Brand: Logo */}
-        <Link href="/" className="flex items-center gap-3 group">
-          <div className="relative h-12 w-44 sm:h-14 sm:w-48 group-hover:scale-105 transition-transform duration-200">
+        <Link href="/" className="flex items-center gap-3 group py-1">
+          <div className="relative h-16 w-56 sm:h-20 sm:w-64 group-hover:scale-105 transition-transform duration-200">
             <Image
               src="/images/logo.webp"
               alt="make diet plan logo"
               fill
-              sizes="192px"
+              sizes="(max-width: 640px) 224px, 256px"
               className="object-contain object-left"
               priority
             />
