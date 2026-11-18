@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   const menuLinks = [
@@ -14,20 +15,16 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-7">
           {/* Brand Col */}
           <div className="md:col-span-2">
-            <Link href="/" className="flex items-center gap-2.5 font-bold text-lg text-white mb-2.5 font-display">
-              <svg
-                className="w-5 h-5 text-emerald-400"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2.2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-              </svg>
-              <span>make diet plan</span>
+            <Link href="/" className="inline-block mb-3 group">
+              <div className="relative h-14 w-48 group-hover:scale-105 transition-transform duration-200 brightness-125 contrast-125">
+                <Image
+                  src="/images/logo.webp"
+                  alt="make diet plan logo"
+                  fill
+                  sizes="192px"
+                  className="object-contain object-left"
+                />
+              </div>
             </Link>
             <p className="text-xs leading-relaxed text-gray-400 max-w-sm mb-2">
               A diet plan built around your body, your food and your routine. Personalized meal plans and guidance

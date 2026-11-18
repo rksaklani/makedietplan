@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
@@ -18,25 +19,18 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-        {/* Brand: Leaf Icon + make diet plan */}
+        {/* Brand: Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-2xl bg-white/80 border border-white/90 shadow-2xs flex items-center justify-center group-hover:scale-105 transition-all duration-300">
-            <svg
-              className="w-6 h-6 text-[#1b4332] group-hover:rotate-6 transition-transform duration-300"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
-              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
-            </svg>
+          <div className="relative h-12 w-44 sm:h-14 sm:w-48 group-hover:scale-105 transition-transform duration-200">
+            <Image
+              src="/images/logo.webp"
+              alt="make diet plan logo"
+              fill
+              sizes="192px"
+              className="object-contain object-left"
+              priority
+            />
           </div>
-          <span className="text-xl lg:text-2xl font-bold tracking-tight text-[#1b4332] font-display">
-            make diet plan
-          </span>
         </Link>
 
         {/* Desktop Menu */}
