@@ -6,8 +6,11 @@ export const metadata: Metadata = {
   description:
     "Science-backed meal plans for school-going children and families, based on ICMR-NIN guidelines. Book a consultation with a certified nutritionist.",
   icons: {
-    icon: "/icon.webp",
-    shortcut: "/icon.webp",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon.webp", type: "image/webp" },
+    ],
+    shortcut: "/favicon.ico",
     apple: "/icon.webp",
   },
 };
@@ -16,6 +19,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.webp" type="image/webp" />
+        <link rel="apple-touch-icon" href="/icon.webp" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
