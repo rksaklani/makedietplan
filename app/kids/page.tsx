@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Diet Plans for Every Stage of Childhood | The Healthy Tiffin Times",
+  title: "Diet Plans for Every Stage of Childhood | make diet plan",
   description: "From a baby's first foods to a teenager's growth spurts, plans are matched to your child's age, growth, appetite and family food habits.",
 };
 

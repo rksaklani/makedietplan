@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 inset-x-0 z-50 glass-nav transition-all duration-300">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
-        {/* Brand: Leaf Icon + The Healthy Tiffin Times */}
+        {/* Brand: Leaf Icon + make diet plan */}
         <Link href="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-2xl bg-white/80 border border-white/90 shadow-2xs flex items-center justify-center group-hover:scale-105 transition-all duration-300">
             <svg
@@ -35,7 +35,7 @@ export default function Navbar() {
             </svg>
           </div>
           <span className="text-xl lg:text-2xl font-bold tracking-tight text-[#1b4332] font-display">
-            The Healthy Tiffin Times
+            make diet plan
           </span>
         </Link>
 

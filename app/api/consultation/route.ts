@@ -69,7 +69,7 @@ export async function POST(req: Request) {
     const htmlContent = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #ffffff; border: 1px solid #e5e7eb; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.05);">
         <div style="background: linear-gradient(135deg, #1b4332 0%, #2d6a4f 100%); padding: 32px 24px; color: #ffffff; text-align: center;">
-          <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.5px;">The Healthy Tiffin Times</h1>
+          <h1 style="margin: 0; font-size: 24px; font-weight: 800; letter-spacing: -0.5px;">make diet plan</h1>
           <p style="margin: 6px 0 0; font-size: 14px; opacity: 0.9;">New Consultation Booking Request</p>
         </div>
         
@@ -141,10 +141,10 @@ export async function POST(req: Request) {
       });
 
       await transporter.sendMail({
-        from: process.env.SMTP_FROM || `"The Healthy Tiffin Times" <${user}>`,
+        from: process.env.SMTP_FROM || `"make diet plan" <${user}>`,
         to: recipients,
         replyTo: email,
-        subject: `New Consultation Booking Request – The Healthy Tiffin Times (${fullName})`,
+        subject: `New Consultation Booking Request – make diet plan (${fullName})`,
         text: `New consultation request from ${fullName} (${phone}, ${email}). Goal: ${goal}. Age: ${age || "N/A"}. Preference: ${dietaryPreference || "N/A"}. Notes: ${healthHistory || "None"}`,
         html: htmlContent,
       });
@@ -154,7 +154,7 @@ export async function POST(req: Request) {
       console.log(`\n================================================================`);
       console.log(`[CONSULTATION NOTIFICATION EMAIL DISPATCHED]`);
       console.log(`To: ${recipients}`);
-      console.log(`Subject: New Consultation Booking Request – The Healthy Tiffin Times`);
+      console.log(`Subject: New Consultation Booking Request – make diet plan`);
       console.log(`Name: ${fullName}`);
       console.log(`Phone: ${phone}`);
       console.log(`Email: ${email}`);

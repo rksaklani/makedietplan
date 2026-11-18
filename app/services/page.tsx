@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "Clinical Nutrition Services & Pediatric Stages | The Healthy Tiffin Times",
+  title: "Clinical Nutrition Services & Pediatric Stages | make diet plan",
   description: "Personalized diet plans for weight management, PCOS, diabetes, thyroid, gut health, and every stage of childhood.",
 };
 

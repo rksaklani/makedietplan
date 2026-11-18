@@ -27,7 +27,7 @@ export default function Footer() {
                 <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z" />
                 <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12" />
               </svg>
-              <span>The Healthy Tiffin Times</span>
+              <span>make diet plan</span>
             </Link>
             <p className="text-xs leading-relaxed text-gray-400 max-w-sm mb-2">
               A diet plan built around your body, your food and your routine. Personalized meal plans and guidance
@@ -68,7 +68,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-5 border-t border-gray-900/80 flex flex-col md:flex-row items-center justify-between gap-3 text-[11px] text-gray-500">
-          <p>© 2026 The Healthy Tiffin Times. All rights reserved.</p>
+          <p>© 2026 make diet plan. All rights reserved.</p>
           <div className="flex gap-5">
             <Link href="/about" className="hover:text-gray-400">
               About

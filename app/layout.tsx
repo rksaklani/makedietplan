@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "The Healthy Tiffin Times | Nutrition & Diet Plans",
+  title: "make diet plan | Nutrition & Diet Plans",
   description:
-    "Science-backed meal plans for school-going children ages 5–16, based on ICMR-NIN guidelines. Book a consultation with a certified nutritionist.",
+    "Science-backed meal plans for school-going children and families, based on ICMR-NIN guidelines. Book a consultation with a certified nutritionist.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

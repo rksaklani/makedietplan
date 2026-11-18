@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export const metadata = {
-  title: "About Me | Certified Nutritionist | The Healthy Tiffin Times",
+  title: "About Me | Certified Nutritionist | make diet plan",
   description: "Learn about my approach to Indian nutrition, clinical qualifications, experience, and philosophy of home-style eating.",
 };
 
